@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Tip Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__content">
+        <header class="header container__section">
+          A Simple Tip Calculator by Darnell Valerio
+        </header>
+        <div class="calc container__section">
+          <h1 class="calc__title">Tip Calculator</h1>
+          <p class="calc__question">What was the Bill Amount?</p>
+          <input type="text" id="amount" placeholder="$" class="calc__input" />
+          <p class="calc__question">How was the service?</p>
+          <select id="service" class="calc__answer">
+            <option selected disabled hidden class="calc__answer">
+              Select
+            </option>
+            <option value="0.25" class="calc__answer">25% - Top Notch</option>
+            <option value="0.20" class="calc__answer">20% - Excellent</option>
+            <option value="0.15" class="calc__answer">15% - Good</option>
+            <option value="0.10" class="calc__answer">10% - Bad</option>
+            <option value="0.05" class="calc__answer">5% - Terrible</option>
+          </select>
+          <p class="calc__question">Total Number of Persons?</p>
+          <input type="text" id="persons" class="calc__input" placeholder="#" />
+          <button class="calc__submit">Calculate!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
